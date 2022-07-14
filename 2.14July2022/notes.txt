@@ -16,4 +16,7 @@ at browsers it can access the local folders
     where as UTF means the unicode transformation format hence we need UTF-8.
 11. <meta http-equiv="X-UA-Compatible" content="IE=edge" /> this fetches the information of web browsers
 
-12. <meta name="viewport" content="width=device-width, initial-scale=1.0" /> this fecthces the info regarding the device on which the application is working
+12. <meta name="viewport" content="width=device-width, initial-scale=1.0" /> this fecthces the info regarding the device on which the application is working.
+
+13. vedio tag,
+14. figure tag consist of figcaption and image
