@@ -1,7 +1,7 @@
 1. HTML,CSS,JavaScript.
 2. Difference between static and dynamic website.
 
-3. Difference between HTML5 and HTML4
+3. Difference between HTML5 and HTML4 new tags were introduced in HTML5 such as vedio
 4. Extension of webpage is .html ot .htm
 
 5. Head tag is used for giving description of webpage for example meta tag is used to define the description of website.
@@ -9,4 +9,6 @@
 7. SEO Search Eingne Optimization uses icons as compulsory component and it also creates robot.txt file which consist of links of all pages in your
 web application
 
-8. when we use live server then your webpage includes live server's code as well in source code
+8. when we use live server then your webpage includes live server's code as well in source code 
+9. whenever the live server is created it creates it's own resource folder and asset folder so it can't access your local folders where as when we run 
+at browsers it can access the local folders
