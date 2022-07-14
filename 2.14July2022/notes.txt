@@ -12,3 +12,8 @@ web application
 8. when we use live server then your webpage includes live server's code as well in source code 
 9. whenever the live server is created it creates it's own resource folder and asset folder so it can't access your local folders where as when we run 
 at browsers it can access the local folders
+10. <meta charset="UTF-8" /> here 8 means the 8 bit processor because we don't know that any of servers are working on 64-bit or 32-bit or 8-bit that's why we took the minimal because
+    where as UTF means the unicode transformation format hence we need UTF-8.
+11. <meta http-equiv="X-UA-Compatible" content="IE=edge" /> this fetches the information of web browsers
+
+12. <meta name="viewport" content="width=device-width, initial-scale=1.0" /> this fecthces the info regarding the device on which the application is working
