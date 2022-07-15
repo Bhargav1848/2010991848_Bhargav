@@ -1,1 +1,6 @@
 1. nav tag for uniqueness of navbar
+2. label tag is same as p tag except it has a attribute for="" in which we have to give id of the item we want to select when label is clicked
+3. form attribute unifies the data
+4 attributes of form are action,method
+5 action defines that where to go after data is filled 
+6. method can be get and post where as get is fast but not secure  and in other side post is secure data is not passed through url
