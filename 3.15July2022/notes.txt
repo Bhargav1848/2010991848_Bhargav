@@ -4,3 +4,4 @@
 4 attributes of form are action,method
 5 action defines that where to go after data is filled 
 6. method can be get and post where as get is fast but not secure  and in other side post is secure data is not passed through url
+7. for radio button if we put same name to both buttons by which it enabels user to select only one of them
