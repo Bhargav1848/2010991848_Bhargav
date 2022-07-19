@@ -6,6 +6,10 @@
     justify-content: center;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 #text2 {
     font-family: 'Marck Script', cursive;
     font-size: 25px;
