@@ -1,5 +1,5 @@
 .div {
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin: auto;
     display: flex;
@@ -17,8 +17,13 @@
     /* font-family: 'Spline Sans', sans-serif; */
 }
 
+#header {
+    padding: 20px;
+    background-image: linear-gradient(45deg, lightgreen, violet);
+}
+
 .footer {
-    width: 80%;
+    width: 100%;
     height: 100px;
     border: 4px solid navy;
     margin: auto;
@@ -31,8 +36,8 @@
 
 #middle2 {
     display: flex;
-    width: 80%;
-    height: 140px;
+    width: 100%;
+    height: auto;
     padding: 10px 10px;
     box-sizing: border-box;
 }
@@ -40,6 +45,8 @@
 #inner {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    height: auto;
 }
 
 .element {
