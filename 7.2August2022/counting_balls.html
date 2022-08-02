@@ -15,8 +15,10 @@
         var balls = Math.floor(i1 / i2);
         var rballs = Number(i1 - balls * i2);
 
-        document.getElementById("balls").innerHTML += balls;
-        document.getElementById("rballs").innerHTML += rballs;
+        document.getElementById("balls").innerHTML =
+            "Each One will get :" + `<span>${balls}</span>`;
+        document.getElementById("rballs").innerHTML =
+            "Remaining Balls will be :" + `<span>${rballs}</span>`;
     }
 </script>
 
@@ -26,8 +28,8 @@
 
     <button id="button" onclick="fnClick()">Calculate</button><br />
 
-    <p1 id="balls">Each One will get :</p1><br />
-    <p1 id="rballs">Remaining Balls will be :</p1><br />
+    <p1 id="balls"></p1><br />
+    <p1 id="rballs"></p1><br />
 </body>
 
 </html>

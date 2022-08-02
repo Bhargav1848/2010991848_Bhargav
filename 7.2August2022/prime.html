@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
+<script src="prime.js"></script>
 
-<body></body>
+<body>
+    <label for="id1">Enter the Number till you want prime numbers:</label>
+    <input type="number" id="id1" /><br />
+    <button onclick="prime(`${document.getElementById('id1').value}`)">
+      Click
+    </button>
+</body>
 
 </html>
