@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    #input1,
+    #input2 {
+        margin: 10px;
+    }
+</style>
+<script>
+    function fnClick() {
+        var n1 = document.getElementById("input1").value;
+        var n2 = document.getElementById("input2").value;
+
+        if (!isNaN(n1) && !isNaN(n2)) {
+            n1 = Number(n1);
+            n2 = Number(n2);
+            document.getElementById("id").innerHTML = n1 + n2;
+        } else {
+            document.getElementById("id").innerHTML =
+                "<span style='color:red'>Please Enter a valid number</span>";
+        }
+    }
+</script>
+
+<body>
+    <label for="input1">N1</label
+    ><input type="text" name="h1" id="input1" /><br />
+    <label for="input2">N1</label
+    ><input type="text" name="h1" id="input2" /><br />
+
+    <br />
+    <button onclick="fnClick()">Click</button>
+    <p id="id"></p>
+  </body>
+</html>
