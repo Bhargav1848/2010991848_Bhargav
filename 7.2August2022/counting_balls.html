@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<script>
+    function fnClick() {
+        var i1 = document.getElementById("i1").value;
+        var i2 = document.getElementById("i2").value;
+
+        var balls = Math.floor(i1 / i2);
+        var rballs = Number(i1 - balls * i2);
+
+        document.getElementById("balls").innerHTML += balls;
+        document.getElementById("rballs").innerHTML += rballs;
+    }
+</script>
+
+<body>
+    <label for="i1">Total Balls:</label><input type="number" id="i1" /><br />
+    <label for="i2">Total Students:</label><input type="number" id="i2" /><br />
+
+    <button id="button" onclick="fnClick()">Calculate</button><br />
+
+    <p1 id="balls">Each One will get :</p1><br />
+    <p1 id="rballs">Remaining Balls will be :</p1><br />
+</body>
+
+</html>
