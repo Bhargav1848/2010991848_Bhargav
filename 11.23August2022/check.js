@@ -32,5 +32,5 @@ function check() {
     });
 
     document.getElementById("object").innerHTML =
-        " Id: " + id + "\n" + "Age: " + age + "\n" + " Name: " + name;
+        " Id: " + id + "<br>" + "Age: " + age + "<br>" + " Name: " + name;
 }
