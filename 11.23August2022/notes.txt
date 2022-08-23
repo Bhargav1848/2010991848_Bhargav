@@ -1,0 +1,5 @@
+# Errors
+1. That can be handled -----1.) Runtime Error(Exceptions) 2.) Compile time Error
+2. Can't be handled-------all the natural errors Internet Disconected
+
+Javascript,python,php all these scripting language use interpreter there can't be any compile error

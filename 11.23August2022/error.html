@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style></style>
+
+<body>
+    <div id="main">
+        <input type="text" id="n1" name="'n1" class="input" />
+        <button onclick="{try{myFun()}catch(err){console.log(err)}}">
+        Click Me
+      </button>
+        <p id="err"></p>
+        <p id="id"></p>
+    </div>
+</body>
+<script>
+    function myFun() {
+        let a = document.getElementById("n1").value;
+        if (!isNaN(a)) {
+            a = Number(a);
+            if (a < 18) {
+                throw "It's too low";
+            }
+            if (a > 60) {
+                throw "It's too big";
+            }
+        } else {
+            throw "It's not a number";
+        }
+    }
+</script>
+
+</html>
