@@ -1,0 +1,12 @@
+1.A synchronous function is a function that does not return untill the work is completed or haas failed.
+2.Synchronous is single threaded and Asynchronous is multi threaded
+
+        Asynchronous           |             Synchronous
+1.Multi threaded               | 1.Single threaded
+2.non-blocking approach        | 2. one at a time and only when one is completed
+
+* Async and await are syntatical methods to create non-blocking programms
+* Promise object represents the eventual completion(or faliure of a asynchrounous operation and it's resulting value
+
+*Async function always return promise
+*Async function always load on the loading of site so we have cover it by another function
