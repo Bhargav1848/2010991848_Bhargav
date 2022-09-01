@@ -14,29 +14,31 @@
 </body>
 
 <script>
-    function f2(a, b) {
-        try {
-            if (b == 0) {
-                throw "Error Occured";
-            } else {
-                return a / b;
-            }
-        } catch (err) {
-            return err;
+    async function f2(a, b) {
+        if (b == 0) {
+            throw "Error Occured";
+        } else {
+            return a / b;
         }
     }
 
     function f() {
         const f1 = async() => {
             let p = new Promise((resolve, reject) => {
-                setTimeout(() => reject(404), 1000);
-                setTimeout(
-                    () => resolve(isFinite(f2(4, 0)) ? f2(4, 0) : reject),
-                    1000
+                setTimeout(() =>
+                    resolve(
+                        f2(4, 2)
+                        .then((res) => {
+                            console.log(res);
+                        })
+                        .catch((err) => {
+                            () => reject(new Error("Whoops!"));
+                        }),
+                        1000
+                    )
                 );
             });
             let result = await p;
-            console.log(result);
         };
         f1();
     }
