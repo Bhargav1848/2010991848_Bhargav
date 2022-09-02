@@ -1,7 +1,11 @@
 import React from "react";
 
-function First() {
-  return <div>Hello Bhargav</div>;
+function First(props) {
+  return (
+    <div>
+      Hello {props.title} your age is {props.age}
+    </div>
+  );
 }
 
 export default First;

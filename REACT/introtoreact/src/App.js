@@ -5,7 +5,7 @@ import First from "./Components/First";
 function App() {
   return (
     <div className="App">
-      <First />
+      <First title="Bhargav" age="23" />
     </div>
   );
 }
