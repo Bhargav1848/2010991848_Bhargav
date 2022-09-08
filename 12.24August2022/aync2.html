@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <button onclick="f()">Click</button>
     <!-- <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/Aug/Apay/GW-PC-Deals-Unrec-3000._CB629506848_.jpg " alt="" /> -->
-</body>
+  </body>
 
-<script>
+  <script>
     async function f2(a, b) {
-        if (b == 0) {
-            throw "Error Occured";
-        } else {
-            return a / b;
-        }
+      if (b == 0) {
+        throw "Error Occured";
+      } else {
+        return a / b;
+      }
     }
 
     function f() {
-        const f1 = async() => {
-            let p = new Promise((resolve, reject) => {
-                setTimeout(() =>
-                    resolve(
-                        f2(4, 2)
-                        .then((res) => {
-                            console.log(res);
-                        })
-                        .catch((err) => {
-                            () => reject(new Error("Whoops!"));
-                        }),
-                        1000
-                    )
-                );
-            });
-            let result = await p;
-        };
-        f1();
+      const f1 = async () => {
+        let p = new Promise((resolve, reject) => {
+          setTimeout(() =>
+            resolve(
+              f2(4, 2)
+                .then((res) => {
+                  console.log(res);
+                })
+                .catch((err) => {
+                  () => reject(new Error("Whoops!"));
+                }),
+              1000
+            )
+          );
+        });
+        let result = await p;
+      };
+      f1();
     }
-</script>
-
+  </script>
 </html>

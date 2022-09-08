@@ -5,6 +5,7 @@ import Login from "./Components/Login";
 import Registration from "./Components/Registration";
 import Welcome from "./Components/Welcome";
 import Style from "./Components/Style";
+import Header from "./Components/Header";
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,8 @@ function App() {
           <Registration />
           <Welcome user="Bhargav" />
         </div> */}
-        <Style />
+        {/* <Style /> */}
+        <Header />
       </div>
     </div>
   );
